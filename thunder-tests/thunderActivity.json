@@ -1,0 +1,35 @@
+[
+  {
+    "_id": "b709c4d5-163d-4d64-9c32-1ae1c370a276",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/",
+    "url": "http://localhost:3000/",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-12-04T12:22:41.099Z",
+    "modified": "2022-12-04T12:30:13.604Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "8b391e51-641a-462b-a29a-0cdae218de02",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/",
+    "url": "http://localhost:3000/",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-12-04T12:28:20.879Z",
+    "modified": "2022-12-04T12:42:11.665Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"long\":\"https://www.facebook.com/\",\n  \"short\":\"facebook\"\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]
