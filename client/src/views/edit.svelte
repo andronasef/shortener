@@ -37,6 +37,8 @@
 </script>
 
 <div class="flex flex-col p-10 justify-center items-center gap-5 ">
+  <div>{status}</div>
+
   <label class="label">
     <span class="label-text">Key</span>
   </label>
@@ -50,8 +52,10 @@
     <span class="label-text">Short Link</span>
   </label>
   <input type="text" bind:value={short} />
-  <button class="btn" on:click={update}>Update</button>
-  <div>{status}</div>
+  <div class="flex flex-row gap-3">
+    <button class="btn" on:click={update}>Update</button>
+    <a href="/shortener/#"><button class="btn">Cancel</button></a>
+  </div>
 </div>
 
 <style>

@@ -57,9 +57,12 @@ const deleteShort = async (req, res) => {
 const updateShort = async (req, res) => {
     // Short As A Key
     const { long, short } = req.body
+    let updateObj = {}
+    if (long) updateObj.long = long.trim()
+    if (short) updateObj.short = short.trim()
 
     if (long || short) {
-        if (await ShortLink.update(req.params.short, req.body)) {
+        if (await ShortLink.update(req.params.short, updateObj)) {
             res.send({ msg: "Updated" })
         } else res.status(404).send({ msg: "Not Found" })
     } else res.status(400).send({ msg: "Bad Request" })

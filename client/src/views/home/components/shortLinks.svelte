@@ -43,9 +43,14 @@
                 <a href={`#/edit/${shortlink.key}`}>
                   <button class="icon"><EditIcon /></button>
                 </a>
-                <button class="icon" on:click={() => deleteLink(shortlink.key)}>
-                  <DeleteIcon />
-                </button>
+                <a href="#">
+                  <button
+                    class="icon"
+                    on:click={() => deleteLink(shortlink.key)}
+                  >
+                    <DeleteIcon />
+                  </button>
+                </a>
               </td>
             </tr>{/each}
         </tbody>

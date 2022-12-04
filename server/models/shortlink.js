@@ -20,8 +20,8 @@ class ShortLink {
 
     static async insert(long, short) {
         return await shortsDB.insert({
-            short: short,
-            long: long,
+            short: short.trim(),
+            long: long.trim(),
             clicks: 0
         }).then(() => true).catch(() => false);
     }
